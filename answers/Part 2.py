@@ -15,3 +15,5 @@ SELECT primary_type, COUNT(*) FROM pokemons GROUP BY primary_type;
 
 # How many pokemon have a secondary type?
 SELECT COUNT(secondary_type) FROM pokemons;
+
+SELECT COUNT(*) FROM pokemons WHERE secondary_type IS NOT NULL;
